@@ -3,8 +3,8 @@
     <title>Feel-io</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/assets/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/img/favicon-16x16.png" sizes="16x16" />
 
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 
@@ -22,7 +22,7 @@
 <header class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="pull-right language-div">
-            <a href="/en">EN</a>
+            <a href="/en/about">EN</a>
         </div>
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -34,8 +34,8 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="/about">Over Ons</a></li>
+                <li><a href="/">Home</a></li>
+                <li  class="active"><a href="/about">Over Ons</a></li>
                 <li><a href="/services">Diensten</a></li>
                 <li><a data-toggle="modal" data-target="#contactModal" href="#contactModal"><i class="far fa-envelope"></i></a></li>
             </ul>
@@ -45,47 +45,102 @@
 <!-- End Nav-->
 
 <main>
-    <div id="headerwrap">
+    <div id="blue">
         <div class="container">
             <div class="row centered">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h1>We <b>Feel</b><br/>
-                        Your <b>ideas</b></h1>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h3 class="second-title">and craft them into code</h3>
+                    <h4>LEER MEER OVER ONS</h4>
+                    <p>WE ZIJN COOLE KERELS</p>
                 </div>
             </div><!-- row -->
         </div><!-- container -->
-    </div><!-- headerwrap -->
-
+    </div><!--  bluewrap -->
 
     <div class="container w">
         <div class="row centered">
             <br><br>
-            <div class="col-lg-4">
-                <i class="fa fa-cog"></i>
-                <h4>ONTWIKKELING</h4>
-                <p>We bouwen gepersonaliseerde websites en software naar de specificaties van onze klanten. We werken nauw samen met onze klanten om het perfecte resultaat te behalen dat zij willen.
-                    <a data-toggle="modal" data-target="#contactModal" href="#contactModal">Contacteer ons</a>
-                    met uw website en software ideeën!</p>
-            </div><!-- col-lg-4 -->
 
-            <div class="col-lg-4">
-                <i class="fa fa-cloud"></i>
-                <h4>HOSTING</h4>
-                <p>We hosten websites en web applicaties in een betrouwbare, snelle en schaalbare cloud omgeving. We integreren de laatste beveiligingsmogelijkheden om er zeker van te zijn dat u en uw gebruikers beschermd zijn.</p>
-            </div><!-- col-lg-4 -->
+            <div class=" col-lg-offset-1 col-lg-5">
+                <img class="img-circle" src="/assets/img/wout.jpg" width="110" height="110" alt="">
+                <h4>Wout Schoovaerts</h4>
+                <p>Wout is een software ontwikkelaar die altijd up to date is met de laatste trends in de software industrie.<br />In zijn voltijdse job bij <a href='http://www.designisdead.be'>Design is dead</a>, werkt Wout aan de websites van <a href='http://base.be'>Base</a>, <a href='http://telenet.be'>Telenet</a>, ... .<br/></p>
+                <ul class="about-links-list">
+                    <li><b>Persoonlijke links:</b></li>
+                    <li>
+                        <a href="https://github.com/zwaldeck"><i class="fab fa-github-square"></i></i> github</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/wout-schoovaerts-04578182"><i class="fab fa-linkedin"></i></i> LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
 
-            <div class="col-lg-4">
-                <i class="fa fa-heart"></i>
-                <h4>ONDERSTEUNING</h4>
-                <p>We bieden ondersteuning bij het updaten van de inhoud en functies van bestaande websites en software. We gaan steeds tot het uiterste om een oplossing te vinden voor de technische problemen van onze klanten.</p>
-            </div><!-- col-lg-4 -->
+            <div class="col-lg-5">
+                <img class="img-circle" src="/assets/img/philip.jpg" width="110" height="110" alt="">
+                <h4>Philip Vissenaekens</h4>
+                <p>Philip is een software ontwikkelaar die houdt van het volgen van de laatste trends en ontwikkelingen in de software industrie.<br />In zijn dagelijkse job bij <a href='http://www.atmire.com'>Atmire</a>, heeft Philip de opportuniteit om bij te dragen aan de open source gemeenschap.</p>
+                <ul class="about-links-list">
+                    <li><b>Persoonlijke links:</b></li>
+                    <li>
+                        <a href="https://github.com/PhilipVis"><i class="fab fa-github-square"></i></i> github</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/philipvissenaekens"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+
         </div><!-- row -->
         <br>
         <br>
     </div><!-- container -->
+
+
+    <!-- PORTFOLIO SECTION -->
+    <div id="dg">
+        <div class="container">
+            <div class="row centered">
+                <h4>ONZE SKILLS</h4>
+                <br>
+
+                <!-- Second Chart -->
+                <div class="col-lg-3 col-sm-6">
+                    <canvas id="web-dev" ></canvas>
+
+                    <p><b>Web Ontwikkeling</b></p>
+                    <p>We zijn gepassioneerde web ontwikkelaars. We volgen altijd de laatste vernieuwingen en trends, om moderne websites te creëren die mooi en snel zijn.</p>
+                </div><!-- /col-lg-3 -->
+
+                <!-- Fourth Chart -->
+                <div class="col-lg-3 col-sm-6">
+                    <canvas id="soft-dev"></canvas>
+
+                    <p><b>Software Ontwikkeling</b></p>
+                    <p>Dit is waar het allemaal begon. Wanneer we leerden programmeren, bouwden we kleine applicaties. Dit groeide echter snel en nu hebben we de kennis om grootschalige gedistribueerde applicaties te bouwen.</p>
+                </div><!-- /col-lg-3 -->
+
+                <!-- Third Chart -->
+                <div class="col-lg-3 col-sm-6">
+                    <canvas id="mobile-apps"></canvas>
+
+                    <p><b>Mobiele Applicatie²s</b></p>
+                    <p>We leerden mobiele applicaties te programmeren in onze opleiding. we kunnen u helpen om een gebruiksvriendelijke applicatie te bouwen die aan al uw verwachtingen voldoet.</p>
+                </div><!-- /col-lg-3 -->
+
+                <div class="col-lg-3 col-sm-6 chart-wrapper">
+                    <canvas id="hosting"></canvas>
+
+                    <p><b>Hosting</b></p>
+                    <p>We kunnen u helpen om uw websites te hosten, en om ze online en beschikbaar te houden. We zorgen er ook altijd voor dat we de laatste beveiligingsmaatregelen toepassen, zodat uw data en gebruikers beschermd zijn.</p>
+                </div>
+
+
+
+
+            </div><!-- row -->
+        </div><!-- container -->
+    </div><!-- DG -->
+
 </main>
 
 <footer>
@@ -152,5 +207,12 @@
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"
+        integrity="sha256-MZo5XY1Ah7Z2Aui4/alkfeiq3CopMdV/bbkc/Sh41+s=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js" i
+        ntegrity="sha256-oSgtFCCmHWRPQ/JmR4OoZ3Xke1Pw4v50uh6pLcu+fIc=" crossorigin="anonymous"></script>
+
+<script src="/assets/js/about.min.js"></script>
 </body>
 </html>
