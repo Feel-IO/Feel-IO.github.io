@@ -1,12 +1,155 @@
 <html>
 <head>
+    <title>Feel-io</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16" />
+
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,700,900" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+          integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="/assets/css/style.min.css"  rel="stylesheet">
 </head>
 <body>
-<h1>EN</h1>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Nav -->
+<header class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="pull-right language-div">
+            <a href="/">NL</a>
+        </div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand navbar-feelio" href="#"><img src="/assets/img/gear-red-gray.png" class="feelio-logo" tag="feelio"/><span class="feel">Feel</span><span class="io">-io</span></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="/en">Home</a></li>
+                <li><a href="/en/about">About</a></li>
+                <li><a href="/en/services">Services</a></li>
+                <li><a data-toggle="modal" data-target="#contactModal" href="#contactModal"><i class="far fa-envelope"></i></a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</header>
+<!-- End Nav-->
+
+<main>
+    <div id="headerwrap">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1>We <b>Feel</b><br/>
+                        Your <b>ideas</b></h1>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h3 class="second-title">and craft them into code</h3>
+                </div>
+            </div><!-- row -->
+        </div><!-- container -->
+    </div><!-- headerwrap -->
+
+
+    <div class="container w">
+        <div class="row centered">
+            <br><br>
+            <div class="col-lg-4">
+                <i class="fa fa-cog"></i>
+                <h4>DEVELOPMENT</h4>
+                <p>We build customised websites and software tailored to the specifications of our clients. We work closely together with our clients to get the perfect results they desire.
+                    <a data-toggle="modal" data-target="#contactModal" href="#contactModal">Contact us</a>
+                    with your website and software ideas!</p>
+            </div><!-- col-lg-4 -->
+
+            <div class="col-lg-4">
+                <i class="fa fa-cloud"></i>
+                <h4>HOSTING</h4>
+                <p>We host websites and web applications in a reliable, high performance and scalable cloud environment. We integrate the latest security measures to make sure your data and users are protected.</p>
+            </div><!-- col-lg-4 -->
+
+            <div class="col-lg-4">
+                <i class="fa fa-heart"></i>
+                <h4>SUPPORT</h4>
+                <p>We provide support in updating the content and features of existing software and websites. We will always go the extra mile to find solutions for our clients technical problems.</p>
+            </div><!-- col-lg-4 -->
+        </div><!-- row -->
+        <br>
+        <br>
+    </div><!-- container -->
+</main>
+
+<footer>
+    <div id="r">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h4>WE ARE PASSIONATE DEVELOPERS, READY TO BUILD YOUR IDEAS.</h4>
+                    <p>We listen to your ideas and take the time to fully understand your goals or problems. We use our knowledge to design and develop products that provide the best experience for your audience.</p>
+                </div>
+            </div><!-- row -->
+        </div><!-- container -->
+    </div><!-- r wrap -->
+
+
+    <!-- FOOTER -->
+    <div id="f">
+        <div class="container">
+            <div class="row centered">
+                <!--<a href="#"><i class="fa fa-twitter"></i></a>-->
+                <a href="https://www.facebook.com/feelio2016"><i class="fab fa-facebook-f"></i></a>
+
+            </div><!-- row -->
+        </div><!-- container -->
+    </div><!-- Footer -->
+
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="contactModalLabel">Contact us</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row centered">
+                        <p>Don't hesitate to contact us.</p>
+                        <p>
+                            Tiensestraat 50<br/>
+                            Aarschot, Belgium<br/>
+                            <a href="mailto:info@feelio.be">info@feelio.be</a>
+                        </p>
+                        <div id="mapwrap">
+                            <iframe
+                                    width="100%"
+                                    height="300"
+                                    frameborder="0"
+                                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDqBbQTdVUmM82eQM0FpPlHNXB9kz45RHs&q=tiensestraat+50+aarschot"
+                                    allowfullscreen>
+                            </iframe>
+                            <!--<iframe height="300" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.es/maps?t=m&amp;ie=UTF8&amp;ll=50.98159,4.83534&amp;spn=67.34552,156.972656&amp;z=2&amp;output=embed"></iframe>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger"><a class="mail-link" href="mailto:info@feelio.be">Email us</a></button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
