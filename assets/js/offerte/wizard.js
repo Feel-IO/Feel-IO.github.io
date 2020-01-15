@@ -22,12 +22,21 @@ $(document).on('change', '#colors', (e) => {
     }
 });
 
+$(document).on('change', '#contact', (e) => {
+    if (e.target.checked) {
+        $('#contact-fields').show();
+    } else {
+        $('#contact-fields').hide();
+    }
+});
+
 $(document).ready(function () {
 
     const onToggleText = $('body').attr('data-on-toggle');
     const offToggleText = $('body').attr('data-off-toggle');
 
     $('#color-pickers').hide();
+    $('#contact-fields').hide();
 
     $('input[type="range"]').rangeslider({
         polyfill: false

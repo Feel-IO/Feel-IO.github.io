@@ -22,6 +22,7 @@
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css">
     <link href="/assets/css/style.min.css" rel="stylesheet">
 
     <link href="/assets/css/offerte/offer.css" rel="stylesheet">
@@ -350,6 +351,68 @@
                                                 </table>
                                             </div>
                                         </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-8 col-md-offset-2">
+                                                <div class="form-group">
+                                                    <label for="contact">Mogen we u contacteren over deze offerte?
+                                                        <small><a>privacybeleid</a></small></label> <br/>
+                                                    <input type="checkbox" id="contact" name="contact"/>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="contact-fields">
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-8 col-md-offset-2">
+                                                    <div class="form-group">
+                                                        <label for="name">Uw naam</label>
+                                                        <input type="text" class="form-control" id="name" name="name"
+                                                               placeholder="Uw naam">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-8 col-md-offset-2">
+                                                    <div class="form-group">
+                                                        <label for="name">Uw email</label>
+                                                        <input type="email" class="form-control" id="email" name="email"
+                                                               placeholder="Uw email">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-8 col-md-offset-2">
+                                                    <div class="form-group">
+                                                        <label for="company">Uw bedrijf <small>(Optioneel)</small></label>
+                                                        <input type="text" class="form-control" id="company" name="company"
+                                                               placeholder="Uw bedrijf">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-8 col-md-offset-2">
+                                                    <div class="form-group">
+                                                        <label for="phone">Uw telefoon nummer <small>(Optioneel)</small></label>
+                                                        <input type="text" class="form-control" id="phone" name="phone"
+                                                               placeholder="Uw telefoon nummer">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-8 col-md-offset-2">
+                                                    <div class="form-group">
+                                                        <label for="deadline">Deadline website <small>(Optioneel)</small></label>
+                                                        <input type="text" class="form-control" id="deadline" name="deadline"
+                                                               placeholder="Deadline website" data-provide="datepicker">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="wizard-footer">
@@ -433,6 +496,10 @@
         crossorigin="anonymous"></script>
 <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.nl.min.js"></script>
+
 
 <script src="/assets/js/rangeslider.js"></script>
 <script src="/assets/js/offerte/jquery.bootstrap.wizard.js"></script>
