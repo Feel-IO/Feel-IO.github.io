@@ -1,5 +1,7 @@
 searchVisible = 0;
 transparent = true;
+let contact = false;
+let totalPrice = 500;
 
 $(document).on('input', 'input[type="range"]', (e) => {
     const outputSelector = e.target.getAttribute('data-output');
@@ -24,9 +26,26 @@ $(document).on('change', '#colors', (e) => {
 
 $(document).on('change', '#contact', (e) => {
     if (e.target.checked) {
+        contact = true;
         $('#contact-fields').show();
     } else {
+        contact = false;
         $('#contact-fields').hide();
+    }
+});
+
+$(document).on('click', '#finish', (e) => {
+    if (contact) {
+        const db = new restdb('5e32d47c4327326cf1c91d45', {});
+        const wizardObj = new db.wizard(buildResultObject());
+        wizardObj.save((err, res) =>  {
+            if (err) {
+                $('#error-msg').show();
+            } else {
+                $('#contact-wrapper').hide();
+                $('#success-msg').show();
+            }
+        })
     }
 });
 
@@ -37,6 +56,8 @@ $(document).ready(function () {
 
     $('#color-pickers').hide();
     $('#contact-fields').hide();
+    $('#success-msg').hide();
+    $('#error-msg').hide();
 
     $('input[type="range"]').rangeslider({
         polyfill: false
@@ -186,14 +207,14 @@ function setOverview() {
     socialMediaRow.hide();
     total.html('&euro; 0');
 
-    let price = 0;
+    let price = 500;
 
     const pagesPrice = (pagesAmount - 1) * 15;
     billPageAmount.html(pagesAmount);
     billPageAmountPrice.html('&euro; ' + pagesPrice);
     price += pagesPrice;
 
-    const layoutPrice = (layoutAmount - 1) * 15;
+    const layoutPrice = (layoutAmount - 1) * 100;
     billLayoutAmount.html(layoutAmount);
     billLayoutAmountPrice.html('&euro; ' + layoutPrice);
     price += layoutPrice;
@@ -233,5 +254,53 @@ function setOverview() {
         socialMediaRow.show();
     }
 
+    totalPrice = price;
     total.html('&euro; ' + price);
+}
+
+function buildResultObject() {
+    const pagesAmount = Number($('input[name="pages"]').val());
+    const layoutAmount = Number($('input[name="layouts"]').val());
+    const wantsNewLogo = $('input[name="logo"]').is(":checked");
+    const knowsColors = $('input[name="colors"]').is(":checked");
+    const colors = knowsColors ? buildColorsObject() : {};
+    const wantsMultipleLanguages = $('input[name="multiple-languages"]').is(":checked");
+    const wantsCms = $('input[name="cms"]').is(":checked");
+    const wantsNewsLetters = $('input[name="news-letters"]').is(":checked");
+    const wantsECom = $('input[name="e-com"]').is(":checked");
+    const wantsSocialMediaIntegration = $('input[name="social-media-integration"]').is(":checked");
+
+    // contact info
+    const name = $('input[name="name"]').val();
+    const email = $('input[name="email"]').val();
+    const company = $('input[name="company"]').val();
+    const phone = $('input[name="phone"]').val();
+    const deadline = $('input[name="deadline"]').val();
+
+    return  {
+        name: name,
+        company: company,
+        email: email,
+        phone: phone,
+        pagesAmount:  pagesAmount,
+        numberOfLayouts: layoutAmount,
+        colors: colors,
+        multipleLanguages: wantsMultipleLanguages,
+        cms: wantsCms,
+        newsletters: wantsNewsLetters,
+        ecommmerce: wantsECom,
+        socialMediaIntegration: wantsSocialMediaIntegration,
+        deadline: deadline,
+        newLogo: wantsNewLogo,
+        knowsColors: knowsColors,
+        totalFromSite: totalPrice
+    }
+}
+
+function buildColorsObject() {
+    return {
+        color1: $('input[name="color1"]').val(),
+        color2: $('input[name="color2"]').val(),
+        color3: $('input[name="color3"]').val()
+    };
 }

@@ -22,7 +22,8 @@
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css">
     <link href="/assets/css/style.min.css" rel="stylesheet">
 
     <link href="/assets/css/offerte/offer.css" rel="stylesheet">
@@ -352,63 +353,86 @@
                                             </div>
                                         </div>
 
-                                        <div class="row">
-                                            <div class="col-sm-12 col-md-8 col-md-offset-2">
-                                                <div class="form-group">
-                                                    <label for="contact">Mogen we u contacteren over deze offerte?
-                                                        <small><a>privacybeleid</a></small></label> <br/>
-                                                    <input type="checkbox" id="contact" name="contact"/>
-                                                </div>
+                                        <div class="row" id="success-msg">
+                                            <div class="col-12">
+                                                <div class="alert alert-success">Dank u voor de offerte aanvraag. We contacteren u zo snel mogenlijk.</div>
                                             </div>
                                         </div>
 
-                                        <div id="contact-fields">
+                                        <div id="contact-wrapper">
+                                            <div class="row" id="error-msg">
+                                                <div class="col-12">
+                                                    <div class="alert alert-danger">Er ging iets mis probeer a.u.b. opnieuw.</div>
+                                                </div>
+                                            </div>
                                             <div class="row">
                                                 <div class="col-sm-12 col-md-8 col-md-offset-2">
                                                     <div class="form-group">
-                                                        <label for="name">Uw naam</label>
-                                                        <input type="text" class="form-control" id="name" name="name"
-                                                               placeholder="Uw naam">
+                                                        <label for="contact">Mogen we u contacteren over deze offerte?
+                                                            <small><a href="/assets/gdpr/nl.pdf" target="_blank">privacybeleid</a></small></label>
+                                                        <br/>
+                                                        <input type="checkbox" id="contact" name="contact"/>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div class="row">
-                                                <div class="col-sm-12 col-md-8 col-md-offset-2">
-                                                    <div class="form-group">
-                                                        <label for="name">Uw email</label>
-                                                        <input type="email" class="form-control" id="email" name="email"
-                                                               placeholder="Uw email">
+                                            <div id="contact-fields">
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-8 col-md-offset-2">
+                                                        <div class="form-group">
+                                                            <label for="name">Uw naam</label>
+                                                            <input type="text" class="form-control" id="name"
+                                                                   name="name"
+                                                                   placeholder="Uw naam">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="row">
-                                                <div class="col-sm-12 col-md-8 col-md-offset-2">
-                                                    <div class="form-group">
-                                                        <label for="company">Uw bedrijf <small>(Optioneel)</small></label>
-                                                        <input type="text" class="form-control" id="company" name="company"
-                                                               placeholder="Uw bedrijf">
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-8 col-md-offset-2">
+                                                        <div class="form-group">
+                                                            <label for="name">Uw email</label>
+                                                            <input type="email" class="form-control" id="email"
+                                                                   name="email"
+                                                                   placeholder="Uw email">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="row">
-                                                <div class="col-sm-12 col-md-8 col-md-offset-2">
-                                                    <div class="form-group">
-                                                        <label for="phone">Uw telefoon nummer <small>(Optioneel)</small></label>
-                                                        <input type="text" class="form-control" id="phone" name="phone"
-                                                               placeholder="Uw telefoon nummer">
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-8 col-md-offset-2">
+                                                        <div class="form-group">
+                                                            <label for="company">Uw bedrijf
+                                                                <small>(Optioneel)</small></label>
+                                                            <input type="text" class="form-control" id="company"
+                                                                   name="company"
+                                                                   placeholder="Uw bedrijf">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="row">
-                                                <div class="col-sm-12 col-md-8 col-md-offset-2">
-                                                    <div class="form-group">
-                                                        <label for="deadline">Deadline website <small>(Optioneel)</small></label>
-                                                        <input type="text" class="form-control" id="deadline" name="deadline"
-                                                               placeholder="Deadline website" data-provide="datepicker">
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-8 col-md-offset-2">
+                                                        <div class="form-group">
+                                                            <label for="phone">Uw telefoon nummer
+                                                                <small>(Optioneel)</small></label>
+                                                            <input type="text" class="form-control" id="phone"
+                                                                   name="phone"
+                                                                   placeholder="Uw telefoon nummer">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-8 col-md-offset-2">
+                                                        <div class="form-group">
+                                                            <label for="deadline">Deadline website
+                                                                <small>(Optioneel)</small></label>
+                                                            <input type="text" class="form-control" id="deadline"
+                                                                   name="deadline"
+                                                                   placeholder="Deadline website"
+                                                                   data-provide="datepicker">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -420,7 +444,7 @@
                                         <input type='button' class='btn btn-next btn-fill btn-danger btn-wd' name='next'
                                                value='Next'/>
                                         <input type='button' class='btn btn-finish btn-fill btn-danger btn-wd'
-                                               name='finish'
+                                               name='finish' id="finish"
                                                value='Finish'/>
                                     </div>
 
@@ -499,6 +523,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.nl.min.js"></script>
+
+<script src="https://feelio-050c.restdb.io/rest/_jsapi.js"></script>
 
 
 <script src="/assets/js/rangeslider.js"></script>
