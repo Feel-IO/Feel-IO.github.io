@@ -31,13 +31,13 @@
     <link href="/assets/css/offerte/themify-icons.css" rel="stylesheet">
     <link href="/assets/css/rangeslider.css" rel="stylesheet">
 </head>
-<body data-on-toggle="Ja" data-off-toggle="Nee">
+<body data-on-toggle="Yes" data-off-toggle="No">
 
 <!-- Nav -->
 <header class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="pull-right language-div">
-            <a href="/en/offer">EN</a>
+            <a href="/offerte">EN</a>
         </div>
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -53,12 +53,11 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">Over Ons</a></li>
-                <li><a href="/services">Diensten</a></li>
-                <li class="active"><a href="/offerte">Bereken de website prijs</a></li>
-                <li><a data-toggle="modal" data-target="#contactModal" href="#contactModal"><i
-                        class="far fa-envelope"></i></a></li>
+                <li><a href="/en">Home</a></li>
+                <li><a href="/en/about">About</a></li>
+                <li><a href="/en/services">Services</a></li>
+                <li class="active"><a href="/en/offer">Calculate website price</a></li>
+                <li><a data-toggle="modal" data-target="#contactModal" href="#contactModal"><i class="far fa-envelope"></i></a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -74,9 +73,8 @@
                         <div class="card wizard-card" data-color="red" id="wizard">
                             <form action="" method="">
                                 <div class="wizard-header">
-                                    <h3 class="wizard-title">Website offerte</h3>
-                                    <p class="category">Met deze info kunnen we jouw een richtprijs geven voor je
-                                        website.</p>
+                                    <h3 class="wizard-title">Website offer</h3>
+                                    <p class="category">With this info we can give you a target price for your website.</p>
                                 </div>
                                 <div class="wizard-navigation">
                                     <div class="progress-with-circle">
@@ -89,7 +87,7 @@
                                                 <div class="icon-circle">
                                                     <i class="ti-files"></i>
                                                 </div>
-                                                Basis info
+                                                Basic info
                                             </a>
                                         </li>
                                         <li>
@@ -105,7 +103,7 @@
                                                 <div class="icon-circle">
                                                     <i class="ti-package"></i>
                                                 </div>
-                                                Overzicht
+                                                Summary
                                             </a>
                                         </li>
                                     </ul>
@@ -114,15 +112,15 @@
                                     <div class="tab-pane" id="basic">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <h5 class="info-text">Laten we starten met de basis info</h5>
+                                                <h5 class="info-text">Let's start with the basic info</h5>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-12 col-md-8 col-md-offset-2">
                                                 <div class="form-group">
-                                                    <label for="pages">De website bestaat uit <strong id="pages-amount"
+                                                    <label for="pages">The website will have <strong id="pages-amount"
                                                                                                       class="slider-number">5</strong>
-                                                        paginas</label>
+                                                        pages</label>
                                                     <input type="range" id="pages" name="pages" min="1" max="50"
                                                            step="1"
                                                            value="5" data-orientation="horizontal"
@@ -133,10 +131,10 @@
                                         <div class="row">
                                             <div class="col-sm-12 col-md-8 col-md-offset-2">
                                                 <div class="form-group">
-                                                    <label for="layouts">De website bestaat uit <strong
+                                                    <label for="layouts">The website will have <strong
                                                             id="layout-amount"
                                                             class="slider-number">1</strong>
-                                                        verschillende layout(s).</label>
+                                                        different layout(s).</label>
                                                     <input type="range" id="layouts" name="layouts" min="1" max="10"
                                                            step="1" value="1" data-orientation="horizontal"
                                                            data-output="#layout-amount"/>
@@ -146,7 +144,7 @@
                                         <div class="row">
                                             <div class="col-sm-12 col-md-8 col-md-offset-2">
                                                 <div class="form-group">
-                                                    <label for="logo">Wilt u een nieuw logo?</label> <br/>
+                                                    <label for="logo">Do you want a new logo?</label> <br/>
                                                     <input type="checkbox" id="logo" name="logo" checked/>
                                                 </div>
                                             </div>
@@ -157,23 +155,22 @@
                                                 <div class="row">
                                                     <div class="col-sm-12">
                                                         <div class="form-group">
-                                                            <label for="colors">Weet je welke kleuren je wilt
-                                                                gebruiken?</label> <br/>
+                                                            <label for="colors">Do you know what colors you want to use?</label> <br/>
                                                             <input type="checkbox" id="colors" name="colors"/>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="row" id="color-pickers">
                                                     <div class="col-sm-12 col-md-4">
-                                                        <label for="color1">1e kleur</label>
+                                                        <label for="color1">1st color</label>
                                                         <input type="color" id="color1" name="color1" value="#000000"/>
                                                     </div>
                                                     <div class="col-sm-12 col-md-4">
-                                                        <label for="color2">2e kleur</label>
+                                                        <label for="color2">2nd color</label>
                                                         <input type="color" id="color2" name="color2" value="#000000"/>
                                                     </div>
                                                     <div class="col-sm-12 col-md-4">
-                                                        <label for="color3">3e kleur</label>
+                                                        <label for="color3">3th color</label>
                                                         <input type="color" id="color3" name="color3" value="#000000"/>
                                                     </div>
                                                 </div>
@@ -182,11 +179,11 @@
                                     </div>
 
                                     <div class="tab-pane" id="extra">
-                                        <h5 class="info-text">Vertel ons wat meer over wat je wil</h5>
+                                        <h5 class="info-text">Tell us more about what you want</h5>
                                         <div class="row">
                                             <div class="col-sm-12 col-md-8 col-md-offset-2">
                                                 <div class="form-group">
-                                                    <label for="responsive">Wil je dat we website responsive is?</label>
+                                                    <label for="responsive">Do you want a responsive website?</label>
                                                     <br/>
                                                     <input type="checkbox" id="responsive" name="responsive" checked
                                                            readonly disabled/>
@@ -196,7 +193,7 @@
                                         <div class="row">
                                             <div class="col-sm-12 col-md-8 col-md-offset-2">
                                                 <div class="form-group">
-                                                    <label for="multiple-languages">Wil je meerdere talen?</label> <br/>
+                                                    <label for="multiple-languages">Do you want multiple languages?</label> <br/>
                                                     <input type="checkbox" id="multiple-languages"
                                                            name="multiple-languages"/>
                                                 </div>
@@ -205,9 +202,7 @@
                                         <div class="row">
                                             <div class="col-sm-12 col-md-8 col-md-offset-2">
                                                 <div class="form-group">
-                                                    <label for="cms">Wilt u zelf dingen kunnen aanpassen? (teksten,
-                                                        fotos,
-                                                        …)</label> <br/>
+                                                    <label for="cms">Do you want to change things yourself? (Texts, Photos, …)</label> <br/>
                                                     <input type="checkbox" id="cms" name="cms"/>
                                                 </div>
                                             </div>
@@ -215,7 +210,7 @@
                                         <div class="row">
                                             <div class="col-sm-12 col-md-8 col-md-offset-2">
                                                 <div class="form-group">
-                                                    <label for="seo">SEO Optimalizaties</label> <br/>
+                                                    <label for="seo">SEO Optimization</label> <br/>
                                                     <input type="checkbox" id="seo" name="seo" checked readonly
                                                            disabled/>
                                                 </div>
@@ -224,8 +219,7 @@
                                         <div class="row">
                                             <div class="col-sm-12 col-md-8 col-md-offset-2">
                                                 <div class="form-group">
-                                                    <label for="news-letters">Wilt u nieuwsbrieven kunnen
-                                                        verzenden?</label>
+                                                    <label for="news-letters">Do you want to send newsletters?</label>
                                                     <br/>
                                                     <input type="checkbox" id="news-letters" name="news-letters"/>
                                                 </div>
@@ -234,7 +228,7 @@
                                         <div class="row">
                                             <div class="col-sm-12 col-md-8 col-md-offset-2">
                                                 <div class="form-group">
-                                                    <label for="e-com">Wilt u een web-winkel?</label> <br/>
+                                                    <label for="e-com">Do want to do E-Commerce?</label> <br/>
                                                     <input type="checkbox" id="e-com" name="e-com"/>
                                                 </div>
                                             </div>
@@ -242,7 +236,7 @@
                                         <div class="row">
                                             <div class="col-sm-12 col-md-8 col-md-offset-2">
                                                 <div class="form-group">
-                                                    <label for="social-media-integration">Wilt u integratie met social
+                                                    <label for="social-media-integration">Do you want integation with social
                                                         media? (Facebook, Twitter, ...)</label> <br/>
                                                     <input type="checkbox" id="social-media-integration"
                                                            name="social-media-integration"/>
@@ -253,24 +247,24 @@
 
                                     <div class="tab-pane" id="overview">
                                         <div class="row">
-                                            <h5 class="info-text">Hier is uw offerte. </h5>
+                                            <h5 class="info-text">Hier are our calculations. </h5>
                                             <div class="col-sm-12">
                                                 <table class="table table-hover">
                                                     <thead>
                                                     <tr>
-                                                        <th>Onderdeel</th>
+                                                        <th>Item</th>
                                                         <th class="text-center">#</th>
-                                                        <th class="text-center">Prijs</th>
+                                                        <th class="text-center">Price</th>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td class="col-md-10"><em>Basis</em></td>
+                                                        <td class="col-md-10"><em>Basic</em></td>
                                                         <td class="col-md-1" style="text-align: center"> 1</td>
                                                         <td class="col-md-1 text-center">&euro; 500</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="col-md-10"><em>Verschillende pagina's</em></td>
+                                                        <td class="col-md-10"><em>Different pages</em></td>
                                                         <td class="col-md-1" style="text-align: center"
                                                             id="bill-page-amount">1
                                                         </td>
@@ -279,7 +273,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="col-md-10"><em>Verschillende Layouts</em></td>
+                                                        <td class="col-md-10"><em>Different Layouts</em></td>
                                                         <td class="col-md-1" style="text-align: center"
                                                             id="bill-layout-amount">1
                                                         </td>
@@ -289,63 +283,61 @@
                                                     </tr>
 
                                                     <tr id="bill-logo">
-                                                        <td class="col-md-10"><em>Nieuw logo</em></td>
+                                                        <td class="col-md-10"><em>New logo</em></td>
                                                         <td class="col-md-1" style="text-align: center">1</td>
                                                         <td class="col-md-1 text-center">&euro; 300</td>
                                                     </tr>
 
                                                     <tr id="bill-colors">
-                                                        <td class="col-md-10"><em>U weet welke kleuren u wil</em></td>
+                                                        <td class="col-md-10"><em>You know what colors you want</em></td>
                                                         <td class="col-md-1" style="text-align: center">1</td>
                                                         <td class="col-md-1 text-center"><strong>&euro; -50</strong>
                                                         </td>
                                                     </tr>
 
                                                     <tr>
-                                                        <td class="col-md-10"><em>Website zal responsive zijn</em></td>
+                                                        <td class="col-md-10"><em>Website will be responsive</em></td>
                                                         <td class="col-md-1" style="text-align: center">1</td>
                                                         <td class="col-md-1 text-center"><strong>&euro; 0</strong></td>
                                                     </tr>
 
                                                     <tr id="bill-multi-lang">
-                                                        <td class="col-md-10"><em>Meerdere talen</em></td>
+                                                        <td class="col-md-10"><em>Multiple languages</em></td>
                                                         <td class="col-md-1" style="text-align: center">1</td>
                                                         <td class="col-md-1 text-center">&euro; 150</td>
                                                     </tr>
 
                                                     <tr id="bill-cms">
-                                                        <td class="col-md-10"><em>Zelf teksten, foto's, videos, ...
-                                                            kunnen aanpassen</em></td>
+                                                        <td class="col-md-10"><em>Change/Update texts, photos, videos, ...</em></td>
                                                         <td class="col-md-1" style="text-align: center">1</td>
                                                         <td class="col-md-1 text-center">&euro; 400</td>
                                                     </tr>
 
                                                     <tr>
-                                                        <td class="col-md-10"><em>Website zal geoptimaliseerd zijn voor
-                                                            SEO</em></td>
+                                                        <td class="col-md-10"><em>Website will be optimized for SEO</em></td>
                                                         <td class="col-md-1" style="text-align: center">1</td>
                                                         <td class="col-md-1 text-center"><strong>&euro; 0</strong></td>
                                                     </tr>
 
                                                     <tr id="bill-newsletters">
-                                                        <td class="col-md-10"><em>Nieuwsbrieven verzenden</em></td>
+                                                        <td class="col-md-10"><em>Send newsletters</em></td>
                                                         <td class="col-md-1" style="text-align: center">1</td>
                                                         <td class="col-md-1 text-center">&euro; 250</td>
                                                     </tr>
 
                                                     <tr id="bill-e-com">
-                                                        <td class="col-md-10"><em>Website is een web-winkel</em></td>
+                                                        <td class="col-md-10"><em>Website has E-Commerce</em></td>
                                                         <td class="col-md-1" style="text-align: center">1</td>
                                                         <td class="col-md-1 text-center">&euro; 1000</td>
                                                     </tr>
 
                                                     <tr id="bill-social-media">
-                                                        <td class="col-md-10"><em>Social media integratie</em></td>
+                                                        <td class="col-md-10"><em>Social media integration</em></td>
                                                         <td class="col-md-1" style="text-align: center">1</td>
                                                         <td class="col-md-1 text-center">&euro; 100</td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="text-right"><h4><strong>Totaal: </strong></h4></td>
+                                                        <td class="text-right"><h4><strong>Total: </strong></h4></td>
                                                         <td colspan="2" class="text-center text-danger"><h4><strong
                                                                 id="bill-total">&euro; 0</strong></h4>
                                                         </td>
@@ -357,21 +349,21 @@
 
                                         <div class="row" id="success-msg">
                                             <div class="col-12">
-                                                <div class="alert alert-success">Dank u voor de offerte aanvraag. We contacteren u zo snel mogenlijk.</div>
+                                                <div class="alert alert-success">Thanks for you interest. We will contact you as soon as possible.</div>
                                             </div>
                                         </div>
 
                                         <div id="contact-wrapper">
                                             <div class="row" id="error-msg">
                                                 <div class="col-12">
-                                                    <div class="alert alert-danger">Er ging iets mis probeer a.u.b. opnieuw.</div>
+                                                    <div class="alert alert-danger">Something went wrong. Please try again.</div>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-sm-12 col-md-8 col-md-offset-2">
                                                     <div class="form-group">
-                                                        <label for="contact">Mogen we u contacteren over deze offerte?
-                                                            <small><a href="/assets/gdpr/nl.pdf" target="_blank">privacybeleid</a></small></label>
+                                                        <label for="contact">Can we contact you about this website?
+                                                            <small><a href="/assets/gdpr/en.pdf" target="_blank">Privacy policy</a></small></label>
                                                         <br/>
                                                         <input type="checkbox" id="contact" name="contact"/>
                                                     </div>
@@ -382,10 +374,10 @@
                                                 <div class="row">
                                                     <div class="col-sm-12 col-md-8 col-md-offset-2">
                                                         <div class="form-group">
-                                                            <label for="name">Uw naam</label>
+                                                            <label for="name">Your name</label>
                                                             <input type="text" class="form-control" id="name"
                                                                    name="name"
-                                                                   placeholder="Uw naam">
+                                                                   placeholder="Your name">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -393,10 +385,10 @@
                                                 <div class="row">
                                                     <div class="col-sm-12 col-md-8 col-md-offset-2">
                                                         <div class="form-group">
-                                                            <label for="name">Uw email</label>
+                                                            <label for="name">Your email</label>
                                                             <input type="email" class="form-control" id="email"
                                                                    name="email"
-                                                                   placeholder="Uw email">
+                                                                   placeholder="Your email">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -404,11 +396,11 @@
                                                 <div class="row">
                                                     <div class="col-sm-12 col-md-8 col-md-offset-2">
                                                         <div class="form-group">
-                                                            <label for="company">Uw bedrijf
-                                                                <small>(Optioneel)</small></label>
+                                                            <label for="company">Your company
+                                                                <small>(Optional)</small></label>
                                                             <input type="text" class="form-control" id="company"
                                                                    name="company"
-                                                                   placeholder="Uw bedrijf">
+                                                                   placeholder="Your company">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -416,11 +408,11 @@
                                                 <div class="row">
                                                     <div class="col-sm-12 col-md-8 col-md-offset-2">
                                                         <div class="form-group">
-                                                            <label for="phone">Uw telefoon nummer
-                                                                <small>(Optioneel)</small></label>
+                                                            <label for="phone">Your phone number
+                                                                <small>(Optional)</small></label>
                                                             <input type="text" class="form-control" id="phone"
                                                                    name="phone"
-                                                                   placeholder="Uw telefoon nummer">
+                                                                   placeholder="Your phone number">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -429,7 +421,7 @@
                                                     <div class="col-sm-12 col-md-8 col-md-offset-2">
                                                         <div class="form-group">
                                                             <label for="deadline">Deadline website
-                                                                <small>(Optioneel)</small></label>
+                                                                <small>(Optional)</small></label>
                                                             <input type="text" class="form-control" id="deadline"
                                                                    name="deadline"
                                                                    placeholder="Deadline website"
@@ -444,15 +436,15 @@
                                 <div class="wizard-footer">
                                     <div class="pull-right">
                                         <input type='button' class='btn btn-next btn-fill btn-danger btn-wd' name='next'
-                                               value='Volgende'/>
+                                               value='Next'/>
                                         <input type='button' class='btn btn-finish btn-fill btn-danger btn-wd'
                                                name='finish' id="finish"
-                                               value='Afronden'/>
+                                               value='Finish'/>
                                     </div>
 
                                     <div class="pull-left">
                                         <input type='button' class='btn btn-previous btn-default btn-wd' id="previous"
-                                               name='previous' value='Vorige'/>
+                                               name='previous' value='Previous'/>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -477,17 +469,16 @@
         </div><!-- container -->
     </div><!-- Footer -->
 
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal"
-         aria-hidden="true">
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="contactModalLabel">Contacteer ons</h4>
+                    <h4 class="modal-title" id="contactModalLabel">Contact us</h4>
                 </div>
                 <div class="modal-body">
                     <div class="row centered">
-                        <p>Aarzel niet om ons te contacteren.</p>
+                        <p>Don't hesitate to contact us.</p>
                         <p>
                             Tiensestraat 50<br/>
                             Aarschot, Belgium<br/>
@@ -506,8 +497,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger"><a class="mail-link" href="mailto:info@feelio.be">Email
-                        us</a></button>
+                    <button type="button" class="btn btn-danger"><a class="mail-link" href="mailto:info@feelio.be">Email us</a></button>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->

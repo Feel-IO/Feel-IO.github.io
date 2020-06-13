@@ -1,5 +1,5 @@
-searchVisible = 0;
-transparent = true;
+let searchVisible = 0;
+let transparent = true;
 let contact = false;
 let totalPrice = 500;
 
@@ -44,8 +44,12 @@ $(document).on('click', '#finish', (e) => {
             } else {
                 $('#contact-wrapper').hide();
                 $('#success-msg').show();
+                $('#finish').hide();
+                $('#previous').hide();
             }
         })
+    } else {
+        window.location = '/';
     }
 });
 
