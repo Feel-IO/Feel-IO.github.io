@@ -72,8 +72,9 @@ label {
     text-align: center;
     background-attachment: relative;
     background-position: center center;
-    min-height: 500px;
     width: 100%;
+    /* Full height of screen - header height - footer height */
+    min-height: calc(100vh - 60px - 130px);
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -968,4 +969,9 @@ input[type="button"]:focus {
     .btn-wd {
         min-width: 140px;
     }
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
 }
