@@ -1,4 +1,4 @@
-const CACHE_NAME = 'feelio-V1';
+const CACHE_NAME = 'feelio-V2';
 const URLS_CACHE_ONLY = [
     // Non changeable CSS
     'https://fonts.googleapis.com/css?family=Lato:300,400,700,900',
@@ -20,7 +20,10 @@ const URLS_CACHE_ONLY = [
     'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.nl.min.js',
     '/assets/js/rangeslider.js',
     '/assets/js/offerte/jquery.bootstrap.wizard.js',
-    '/assets/js/offerte/jquery.validate.min.js'
+    '/assets/js/offerte/jquery.validate.min.js',
+
+    // Images
+    '/assets/img/offerte-bg.jpg'
 ];
 
 self.addEventListener("install", function (event) {
